@@ -1,0 +1,61 @@
+# General Python ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+ENV/
+env.bak/
+*.env
+
+# Django specific ignores
+*.sqlite3
+db.sqlite3
+db.sqlite3-journal
+/media/
+/staticfiles/
+/static/
+/node_modules/
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.swp
+*.swo
+*.DS_Store
+.idea/
+.vscode/
+*.bak
+
+# pytest cache
+.pytest_cache/
+
+# Migrations - Exclude compiled migrations only
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+# Secret and Config Files
+*.pem
+*.key
+config.json
+secrets.json
+
+# OS specific files
+Thumbs.db
+.DS_Store
+
+# Other temporary files
+*.tmp
+*.log
+*.~lock
+*.bak
