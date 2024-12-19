@@ -8,7 +8,8 @@ from pathlib import Path
 import os
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-NOTIFICATION_ENDPOINT = "http://localhost:5001/notifications"
+# Default value for the notification endpoint
+NOTIFICATION_ENDPOINT = os.getenv("NOTIFICATION_ENDPOINT", "http://localhost:5001/notifications")
 
 # Base directory of the project
 BASE_DIR = Path(__file__).resolve().parent.parent
